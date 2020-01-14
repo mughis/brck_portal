@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body{
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.topnav{
+			overflow: hidden;
+			background-color: #333;
+		}
+		.topnav a{
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		.topnav a :hover{
+			background-color: #ddd;
+			color: black;
+		}
+		.topnav a.active{
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="topnav">
+		<a class="active" href="#brc_portal">BRC Portal</a>
+	</div>
+
+	<div align="center" >
+		<form action="stu_marksheet.php" method = "post">
+        <h1>STUDENT MARKSHEET</h1>
+			
+	Enter Student Name   :<input type=text name=stn size=30><br>
+	Enter Father's Name  :<input type=text name=fn size=30><br>
+
+        <h2>Enter Marks Of Student</h2>
+	English marks  :<input type="text" name="eng" size=30><br>
+	Maths marks    :<input type="text" name="math" size=30><br>
+	Physics marks  :<input type="text" name="phy" size=30><br>
+	Chemistry marks:<input type="text" name="chy" size=30><br>
+    Computer marks :<input type="text" name="com" size=30><br>
+		<input type="submit">
+		<input type="reset">	
+	</form>
+	</div>
+</body>
+</html>
